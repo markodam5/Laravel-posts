@@ -46,7 +46,7 @@
                                             <td>
                                                 <a href="/posts/{{$post->id}}" class="btn btn-success">View</a>
                                                 <a href="/edit-post/{{$post->id}}" class="btn btn-info">Edit</a>
-                                                <a href="/delete-post/{{$post->id}}" class="btn btn-danger">Delete</a>
+                                                <a href="/delete-post/{{$post->id}}" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this post?')">Delete</a>
                                             </td>
                                         </tr>
                                     @endforeach
