@@ -9,7 +9,7 @@ class PostController extends Controller
 {
     public function getAllPost(){
         $posts = DB::table('posts')->get();
-        return view('post',compact('posts'));
+        return view('posts',compact('posts'));
     }
 
     public function addPost(){
