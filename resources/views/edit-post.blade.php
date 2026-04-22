@@ -24,10 +24,11 @@
                             <a href="{{ route('post.getallpost')}}" class="btn btn-primary mb-3">Back to Posts</a>
                             
                             @if(Session::has('post_updated'))
-                            <div class="alert alert-success" role="alert">
-                                {{Session::get('post_updated')}}
-                            </div>
-                        @endif
+                                <div class="alert alert-success" role="alert">
+                                    {{Session::get('post_updated')}}
+                                </div>
+                            @endif
+                            
                             <form method="POST" action="{{route('post.update')}}">
                                 @csrf
                                 <input type="hidden" name="id" value="{{$post->id}}">
