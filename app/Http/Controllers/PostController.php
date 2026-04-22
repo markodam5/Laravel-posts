@@ -51,7 +51,8 @@ class PostController extends Controller
             'body'=>$request->body
         ]);
 
-        return back()->with('post_updated','Post has been updated successfully!');
+        return redirect()->route('post.getallpost')
+        ->with('post_updated', 'Post has been updated successfully!');
     }
 
 
