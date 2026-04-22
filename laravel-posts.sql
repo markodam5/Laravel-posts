@@ -35,23 +35,6 @@ INSERT INTO `posts` (`id`, `title`, `body`, `user_id`) VALUES
 	(9, 'Sixth Post Description', 'Sixth Post Title', 2),
 	(12, 'Seventh post title', 'Seventh post description', NULL);
 
--- Dumping structure for table laravel_test.users
-CREATE TABLE IF NOT EXISTS `users` (
-  `id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) NOT NULL,
-  `phone` varchar(15) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `user_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `user_id` (`user_id`),
-  CONSTRAINT `users_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
--- Dumping data for table laravel_test.users: ~2 rows (approximately)
-INSERT INTO `users` (`id`, `name`, `phone`, `email`, `user_id`) VALUES
-	(1, 'Jennifer', '1234567890', 'jennifer@gmail.com', NULL),
-	(2, 'John', '22334455', 'john@gmail.com', NULL);
-
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
