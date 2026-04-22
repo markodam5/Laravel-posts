@@ -21,6 +21,8 @@
                         </div>
 
                         <div class="card-body">
+                            <a href="{{ route('post.getallpost')}}" class="btn btn-primary mb-3">Back to Posts</a>
+                            
                             @if(Session::has('post_updated'))
                             <div class="alert alert-success" role="alert">
                                 {{Session::get('post_updated')}}
