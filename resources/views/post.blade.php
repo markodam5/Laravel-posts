@@ -12,6 +12,11 @@
     
     <section>
         <div class="container">
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <a href="{{ route('post.add') }}" class="btn btn-success">Add Post</a>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="card">
