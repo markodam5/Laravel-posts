@@ -21,6 +21,8 @@
                         </div>
 
                         <div class="card-body">
+                            <a href="{{ route('post.getallpost')}}" class="btn btn-primary mb-3">Back to Posts</a>
+                            
                             <form>
                                 <div class="form-group">
                                     <label for="title">Post Title</label>
