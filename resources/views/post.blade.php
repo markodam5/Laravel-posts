@@ -41,8 +41,8 @@
                                     
                                     @foreach($posts as $post)
                                         <tr>
-                                            <td>{{$post->title}}</td>
-                                            <td>{{$post->body}}</td>
+                                            <td>{{ \Illuminate\Support\Str::limit($post->title, 50) }}</td>
+                                            <td>{{ \Illuminate\Support\Str::limit($post->body, 50) }}</td>
                                             <td>
                                                 <a href="/posts/{{$post->id}}" class="btn btn-success">View</a>
                                                 <a href="/edit-post/{{$post->id}}" class="btn btn-info">Edit</a>
